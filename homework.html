@@ -1,0 +1,37 @@
+<script>
+    const dues = 100000;
+    const total = dues * 4;
+    const pay = 240000;
+    let left = (total - pay) / 4;
+    console.log(left);
+
+    const bank = 100000000;
+    const rate = 1.2;
+    const interest = bank * rate / 100;
+    const tax = 15.4;
+    const tax2 = interest * tax / 100;
+    const totalBank = bank + interest - tax2;
+    console.log(totalBank); 
+    
+    const salary = 5000000;
+    const rate2 = 3.3;
+    const insurance = 100000;
+    let monthTax = salary * rate2 / 100;
+    console.log(monthTax);
+    let monthSalary = salary - monthTax - insurance;
+    let yearSalary = monthSalary * 12;
+    console.log(monthSalary);
+    console.log(yearSalary);
+    
+    const stringFirst = '올해 총 카드 사용 금액은 ';
+    const stringLast = ' 입니다.';
+    let stringChange = '500만원';   
+    console.log(stringFirst + stringChange + stringLast);
+    stringChange = '천만원';
+    console.log(stringFirst + stringChange + stringLast);
+    stringChange = '이천만원';
+    console.log(stringFirst + stringChange + stringLast);
+
+
+
+</script>
